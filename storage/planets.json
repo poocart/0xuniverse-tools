@@ -1,0 +1,641 @@
+{
+  "planets": [
+    {
+      "id": 1,
+      "sector": {
+        "x": 13,
+        "y": 1
+      },
+      "resourcesPerDay": {},
+      "rarity": 1,
+      "discoveredAt": 1528337128
+    },
+    {
+      "id": 2,
+      "sector": {
+        "x": 16,
+        "y": 2
+      },
+      "resourcesPerDay": {},
+      "rarity": 1,
+      "discoveredAt": 1528340327
+    },
+    {
+      "id": 3,
+      "sector": {
+        "x": 12,
+        "y": 1
+      },
+      "resourcesPerDay": {},
+      "rarity": 1,
+      "discoveredAt": 1528340496
+    },
+    {
+      "id": 4,
+      "sector": {
+        "x": 15,
+        "y": 39
+      },
+      "resourcesPerDay": {},
+      "rarity": 1,
+      "discoveredAt": 1528340955
+    },
+    {
+      "id": 5,
+      "sector": {
+        "x": 16,
+        "y": 0
+      },
+      "resourcesPerDay": {},
+      "rarity": 1,
+      "discoveredAt": 1528341458
+    },
+    {
+      "id": 6,
+      "sector": {
+        "x": 11,
+        "y": 0
+      },
+      "resourcesPerDay": {},
+      "rarity": 1,
+      "discoveredAt": 1528341505
+    },
+    {
+      "id": 7,
+      "sector": {
+        "x": 16,
+        "y": 0
+      },
+      "resourcesPerDay": {},
+      "rarity": 1,
+      "discoveredAt": 1528341584
+    },
+    {
+      "id": 8,
+      "sector": {
+        "x": 10,
+        "y": 1
+      },
+      "resourcesPerDay": {},
+      "rarity": 1,
+      "discoveredAt": 1528341891
+    },
+    {
+      "id": 9,
+      "sector": {
+        "x": 13,
+        "y": 3
+      },
+      "resourcesPerDay": {},
+      "rarity": 1,
+      "discoveredAt": 1528341941
+    },
+    {
+      "id": 10,
+      "sector": {
+        "x": 15,
+        "y": 1
+      },
+      "resourcesPerDay": {},
+      "rarity": 1,
+      "discoveredAt": 1528341989
+    },
+    {
+      "id": 11,
+      "sector": {
+        "x": 14,
+        "y": 3
+      },
+      "resourcesPerDay": {},
+      "rarity": 1,
+      "discoveredAt": 1528342064
+    },
+    {
+      "id": 12,
+      "sector": {
+        "x": 15,
+        "y": 1
+      },
+      "resourcesPerDay": {},
+      "rarity": 1,
+      "discoveredAt": 1528342136
+    },
+    {
+      "id": 13,
+      "sector": {
+        "x": 14,
+        "y": 3
+      },
+      "resourcesPerDay": {},
+      "rarity": 1,
+      "discoveredAt": 1528342506
+    },
+    {
+      "id": 14,
+      "sector": {
+        "x": 10,
+        "y": 5
+      },
+      "resources": [
+        {},
+        {},
+        {},
+        {},
+        {}
+      ],
+      "rarity": 1,
+      "discoveredAt": 1528342881
+    },
+    {
+      "id": 15,
+      "sector": {
+        "x": 12,
+        "y": 0
+      },
+      "resources": [
+        {},
+        {},
+        {},
+        {},
+        {}
+      ],
+      "rarity": 1,
+      "discoveredAt": 1528342925
+    },
+    {
+      "id": 16,
+      "sector": {
+        "x": 14,
+        "y": 1
+      },
+      "resources": [
+        {},
+        {},
+        {},
+        {},
+        {}
+      ],
+      "rarity": 1,
+      "discoveredAt": 1528342994
+    },
+    {
+      "id": 17,
+      "sector": {
+        "x": 11,
+        "y": 4
+      },
+      "resources": [
+        {},
+        {},
+        {},
+        {},
+        {}
+      ],
+      "rarity": 1,
+      "discoveredAt": 1528343090
+    },
+    {
+      "id": 18,
+      "sector": {
+        "x": 11,
+        "y": 4
+      },
+      "resources": [
+        {},
+        {},
+        {},
+        {},
+        {}
+      ],
+      "rarity": 1,
+      "discoveredAt": 1528343334
+    },
+    {
+      "id": 19,
+      "sector": {
+        "x": 10,
+        "y": 0
+      },
+      "resources": [
+        {},
+        {},
+        {},
+        {},
+        {}
+      ],
+      "rarity": 1,
+      "discoveredAt": 1528343480
+    },
+    {
+      "id": 20,
+      "sector": {
+        "x": 16,
+        "y": 1
+      },
+      "resources": [
+        {},
+        {},
+        {},
+        {},
+        {}
+      ],
+      "rarity": 3,
+      "discoveredAt": 1528343820
+    },
+    {
+      "id": 21,
+      "sector": {
+        "x": 13,
+        "y": 39
+      },
+      "resources": [
+        {},
+        {},
+        {},
+        {},
+        {}
+      ],
+      "rarity": 2,
+      "discoveredAt": 1528344013
+    },
+    {
+      "id": 22,
+      "sector": {
+        "x": 12,
+        "y": 1
+      },
+      "resources": [
+        {
+          "id": 0,
+          "amountPerDay": 28
+        },
+        {
+          "id": 4,
+          "amountPerDay": 51
+        },
+        {
+          "id": 23,
+          "amountPerDay": 54
+        },
+        {
+          "id": 21,
+          "amountPerDay": 56
+        },
+        {
+          "id": 0,
+          "amountPerDay": 0
+        }
+      ],
+      "rarity": 1,
+      "discoveredAt": 1528344097
+    },
+    {
+      "id": 23,
+      "sector": {
+        "x": 14,
+        "y": 2
+      },
+      "resources": [
+        {
+          "id": 0,
+          "amountPerDay": 50
+        },
+        {
+          "id": 27,
+          "amountPerDay": 47
+        },
+        {
+          "id": 23,
+          "amountPerDay": 42
+        },
+        {
+          "id": 43,
+          "amountPerDay": 54
+        },
+        {
+          "id": 0,
+          "amountPerDay": 0
+        }
+      ],
+      "rarity": 1,
+      "discoveredAt": 1528344271
+    },
+    {
+      "id": 24,
+      "sector": {
+        "x": 12,
+        "y": 3
+      },
+      "resources": [
+        {
+          "id": 27,
+          "amountPerDay": 54
+        },
+        {
+          "id": 25,
+          "amountPerDay": 42
+        },
+        {
+          "id": 26,
+          "amountPerDay": 36
+        }
+      ],
+      "rarity": 1,
+      "discoveredAt": 1528344329
+    },
+    {
+      "id": 25,
+      "sector": {
+        "x": 14,
+        "y": 39
+      },
+      "resources": [
+        {
+          "id": 25,
+          "amountPerDay": 40
+        },
+        {
+          "id": 27,
+          "amountPerDay": 40
+        },
+        {
+          "id": 21,
+          "amountPerDay": 47
+        }
+      ],
+      "rarity": 1,
+      "discoveredAt": 1528344429
+    },
+    {
+      "id": 26,
+      "sector": {
+        "x": 11,
+        "y": 2
+      },
+      "resources": [
+        {
+          "id": 0,
+          "amountPerDay": 65
+        },
+        {
+          "id": 26,
+          "amountPerDay": 57
+        },
+        {
+          "id": 45,
+          "amountPerDay": 64
+        },
+        {
+          "id": 43,
+          "amountPerDay": 81
+        }
+      ],
+      "rarity": 2,
+      "discoveredAt": 1528344579
+    },
+    {
+      "id": 27,
+      "sector": {
+        "x": 15,
+        "y": 3
+      },
+      "resources": [
+        {
+          "id": 0,
+          "amountPerDay": 53
+        },
+        {
+          "id": 8,
+          "amountPerDay": 38
+        },
+        {
+          "id": 25,
+          "amountPerDay": 42
+        },
+        {
+          "id": 22,
+          "amountPerDay": 40
+        }
+      ],
+      "rarity": 1,
+      "discoveredAt": 1528344752
+    },
+    {
+      "id": 28,
+      "sector": {
+        "x": 11,
+        "y": 4
+      },
+      "resources": [
+        {
+          "id": 0,
+          "amountPerDay": 31
+        },
+        {
+          "id": 21,
+          "amountPerDay": 40
+        },
+        {
+          "id": 22,
+          "amountPerDay": 38
+        },
+        {
+          "id": 27,
+          "amountPerDay": 36
+        }
+      ],
+      "rarity": 1,
+      "discoveredAt": 1528344945
+    },
+    {
+      "id": 29,
+      "sector": {
+        "x": 17,
+        "y": 5
+      },
+      "resources": [
+        {
+          "id": 0,
+          "amountPerDay": 51
+        },
+        {
+          "id": 26,
+          "amountPerDay": 42
+        },
+        {
+          "id": 24,
+          "amountPerDay": 40
+        },
+        {
+          "id": 23,
+          "amountPerDay": 45
+        }
+      ],
+      "rarity": 1,
+      "discoveredAt": 1528345346
+    },
+    {
+      "id": 30,
+      "sector": {
+        "x": 17,
+        "y": 4
+      },
+      "resources": [
+        {
+          "id": 0,
+          "amountPerDay": 51
+        },
+        {
+          "id": 5,
+          "amountPerDay": 51
+        },
+        {
+          "id": 24,
+          "amountPerDay": 45
+        },
+        {
+          "id": 25,
+          "amountPerDay": 45
+        }
+      ],
+      "rarity": 1,
+      "discoveredAt": 1528345542
+    },
+    {
+      "id": 31,
+      "sector": {
+        "x": 16,
+        "y": 4
+      },
+      "resources": [
+        {
+          "id": 0,
+          "amountPerDay": 37
+        },
+        {
+          "id": 4,
+          "amountPerDay": 38
+        },
+        {
+          "id": 27,
+          "amountPerDay": 47
+        },
+        {
+          "id": 25,
+          "amountPerDay": 38
+        }
+      ],
+      "rarity": 1,
+      "discoveredAt": 1528345651
+    },
+    {
+      "id": 32,
+      "sector": {
+        "x": 13,
+        "y": 4
+      },
+      "resources": [
+        {
+          "id": 0,
+          "amountPerDay": 36
+        },
+        {
+          "id": 25,
+          "amountPerDay": 51
+        },
+        {
+          "id": 22,
+          "amountPerDay": 42
+        },
+        {
+          "id": 42,
+          "amountPerDay": 33
+        }
+      ],
+      "rarity": 1,
+      "discoveredAt": 1528345766
+    },
+    {
+      "id": 33,
+      "sector": {
+        "x": 16,
+        "y": 0
+      },
+      "resources": [
+        {
+          "id": 0,
+          "amountPerDay": 28
+        },
+        {
+          "id": 23,
+          "amountPerDay": 36
+        },
+        {
+          "id": 24,
+          "amountPerDay": 45
+        },
+        {
+          "id": 43,
+          "amountPerDay": 33
+        }
+      ],
+      "rarity": 1,
+      "discoveredAt": 1528345789
+    },
+    {
+      "id": 34,
+      "sector": {
+        "x": 14,
+        "y": 0
+      },
+      "resources": [
+        {
+          "id": 0,
+          "amountPerDay": 53
+        },
+        {
+          "id": 25,
+          "amountPerDay": 47
+        },
+        {
+          "id": 26,
+          "amountPerDay": 54
+        },
+        {
+          "id": 23,
+          "amountPerDay": 42
+        }
+      ],
+      "rarity": 1,
+      "discoveredAt": 1528345884
+    },
+    {
+      "id": 35,
+      "sector": {
+        "x": 14,
+        "y": 0
+      },
+      "resources": [
+        {
+          "id": 0,
+          "amountPerDay": 30
+        },
+        {
+          "id": 1,
+          "amountPerDay": 38
+        },
+        {
+          "id": 25,
+          "amountPerDay": 42
+        },
+        {
+          "id": 27,
+          "amountPerDay": 56
+        }
+      ],
+      "rarity": 1,
+      "discoveredAt": 1528346042
+    }
+  ],
+  "lastSyncedPlanetId": 35
+}

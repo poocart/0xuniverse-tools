@@ -1,0 +1,12 @@
+{
+  "extends": [
+    "airbnb-base"
+  ],
+  "env": {
+    "es6": true
+  },
+  "rules": {
+    "no-plusplus": [2, { "allowForLoopAfterthoughts": true }],
+    "no-await-in-loop": [0]
+  }
+}
