@@ -4,7 +4,7 @@ const SmartContract = require('../services/smartContract');
 const { parseContractAmount } = require('../utils');
 
 // setup
-const PlanetsContract = SmartContract('0x06a6a7af298129e3a2ab396c9c06f91d3c54aba8', '0xUniversePlanetsContract');
+const planetsContract = new SmartContract('0x06a6a7af298129e3a2ab396c9c06f91d3c54aba8', '0xUniversePlanetsContract');
 const planetsStorage = new Storage('planets', {
   planets: [],
   lastSyncedPlanetId: 0,
@@ -16,7 +16,7 @@ const syncPlanets = async () => {
 
   const lastSyncedPlanetId = planetsStorageInstance.get('lastSyncedPlanetId').value();
 
-  const totalPlanets = parseContractAmount(await PlanetsContract.totalSupply());
+  const totalPlanets = parseContractAmount(await planetsContract.totalSupply());
 
   if (lastSyncedPlanetId === totalPlanets) return;
 
@@ -25,14 +25,27 @@ const syncPlanets = async () => {
     const existingPlanet = planets.find({ id: i }).value();
     if (!isEmpty(existingPlanet)) continue;
 
-    const rawPlanet = await PlanetsContract.getPlanet(i);
+    const rawPlanet = await planetsContract.getPlanet(i);
+
+    let resources = [];
+    if (!isEmpty(rawPlanet.resourcesId)
+      && !isEmpty(rawPlanet.resourcesVelocity)) {
+      resources = rawPlanet.resourcesId
+        .map((resourceRawId, resourceIndex) => {
+          const resourcesId = parseContractAmount(resourceRawId);
+          const amountPerDay = parseContractAmount(rawPlanet.resourcesVelocity[resourceIndex]);
+          return { id: resourcesId, amountPerDay };
+        })
+        .filter((resource) => resource.id !== 0 || resource.amountPerDay !== 0);
+    }
+
     const newPlanet = {
       id: i,
       sector: {
         x: parseContractAmount(rawPlanet.sectorX),
         y: parseContractAmount(rawPlanet.sectorY),
       },
-      resourcesPerDay: {},
+      resources,
       rarity: parseContractAmount(rawPlanet.rarity),
       discoveredAt: parseContractAmount(rawPlanet.discovered),
     };
