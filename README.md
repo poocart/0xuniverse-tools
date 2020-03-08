@@ -6,11 +6,11 @@ This repository contributors didn't have, having or will have any intentions to 
 
 ### Support
 
-If you find this tool helpful feel free to send some ETH/DAI or share with your 0xUniverse goods to `poocart.eth` or `0xc9C56808d48Aa5a22aBd8532B350dBD99CDa3916`. This costs around ~10 USD per month just to host it. 
+If you find this tool helpful feel free to send some ETH/DAI or share with your 0xUniverse goods to `poocart.eth` or `0xc9C56808d48Aa5a22aBd8532B350dBD99CDa3916`. 
 
 ### General
 
-You can either run this locally
+TBU.
 
 ### Available tools
 
@@ -19,7 +19,6 @@ TBU.
 ### More tools
 
 Missing something? Reach us 0xUniverse Discord `#com-tools` channel and maybe we will help.
-
 
 ### Run locally
 
