@@ -50,6 +50,7 @@ const syncPlanets = async () => {
       discoveredAt: parseContractAmount(rawPlanet.discovered),
     };
     planets.push(newPlanet).write();
+    planets.set('lastSyncedPlanetId', i).write();
 
     console.log(`Added planet ${i} of ${totalPlanets}`)
   }
