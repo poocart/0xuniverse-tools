@@ -1,4 +1,8 @@
-import { utils } from 'ethers/ethers';
+const { utils } = require('ethers/ethers');
 
 
-export const parseContractAmount = (value) => Number(utils.formatUnits(value.toString(), 0));
+const parseContractAmount = (value) => Number(utils.formatUnits(value.toString(), 0));
+
+module.exports = {
+  parseContractAmount,
+};

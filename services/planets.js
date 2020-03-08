@@ -1,19 +1,20 @@
-import isEmpty from 'lodash/isEmpty';
-import Storage from 'services/storage';
-import SmartContract from 'services/smartContract';
-import { parseContractAmount } from 'utils';
-
+const isEmpty = require('lodash/isEmpty');
+const Storage = require('../services/storage');
+const SmartContract = require('../services/smartContract');
+const { parseContractAmount } = require('../utils');
 
 // setup
-const PlanetsContract = new SmartContract('0x06a6a7af298129e3a2ab396c9c06f91d3c54aba8', '../abi/0xUniversePlanetsContract.json');
-const PlanetsStorage = new Storage('planets.json', {
+const PlanetsContract = SmartContract('0x06a6a7af298129e3a2ab396c9c06f91d3c54aba8', '0xUniversePlanetsContract');
+const planetsStorage = new Storage('planets', {
   planets: [],
   lastSyncedPlanetId: 0,
 });
 
-export const syncPlanets = async () => {
-  const planets = PlanetsStorage.get('planets');
-  const lastSyncedPlanetId = PlanetsStorage.get('lastSyncedPlanetId').value();
+const syncPlanets = async () => {
+  const planetsStorageInstance = await planetsStorage.instance();
+  const planets = planetsStorageInstance.get('planets');
+
+  const lastSyncedPlanetId = planetsStorageInstance.get('lastSyncedPlanetId').value();
 
   const totalPlanets = parseContractAmount(await PlanetsContract.totalSupply());
 
@@ -35,8 +36,12 @@ export const syncPlanets = async () => {
       rarity: parseContractAmount(rawPlanet.rarity),
       discoveredAt: parseContractAmount(rawPlanet.discovered),
     };
-    planets.insert(newPlanet).write();
+    planets.push(newPlanet).write();
 
     console.log(`Added planet ${i} of ${totalPlanets}`)
   }
+};
+
+module.exports = {
+  syncPlanets,
 };

@@ -4,9 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "babel index.js -d dist",
-    "start": "npm run build && node dist/index.js",
-    "dev": "npm run build && nodemon --exec babel-node dist/index.js"
+    "start": "node index.js",
+    "dev": "nodemon index.js"
   },
   "keywords": [],
   "author": "",
@@ -18,13 +17,6 @@
     "lowdb": "^1.0.0"
   },
   "devDependencies": {
-    "@babel/cli": "^7.8.4",
-    "@babel/core": "^7.8.4",
-    "@babel/node": "^7.8.4",
-    "@babel/polyfill": "^7.8.3",
-    "@babel/preset-env": "^7.8.4",
-    "babel-plugin-inline-json-import": "^0.3.2",
-    "core-js": "^3.6.4",
     "nodemon": "^2.0.2"
   }
 }

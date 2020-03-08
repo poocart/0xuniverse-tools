@@ -1,12 +1,19 @@
-import low from 'lowdb';
-import FileAsync from 'lowdb/adapters/FileAsync';
+const low = require('lowdb');
+const FileAsync = require('lowdb/adapters/FileAsync');
 
 
-const Storage = (filename, defaultValues) => {
-  const adapter = new FileAsync(`../storage/${filename}`);
-  const localDatabase = low(adapter);
-  localDatabase.defaults(defaultValues).write();
-  return localDatabase;
-};
+class Storage {
+  constructor(storageName, defaultValues) {
+    this.storageName = storageName;
+    this.defaultValues = defaultValues;
+  }
 
-export default Storage;
+  async instance() {
+    const adapter = new FileAsync(`${__dirname}/../storage/${this.storageName}.json`);
+    const localDatabase = await low(adapter);
+    localDatabase.defaults(this.defaultValues).write();
+    return localDatabase;
+  }
+}
+
+module.exports = Storage;

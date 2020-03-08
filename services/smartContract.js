@@ -1,10 +1,10 @@
-import { Contract, getDefaultProvider } from 'ethers';
+const { Contract, getDefaultProvider } = require('ethers');
 
 
-const SmartContract = (contractAddress, abiPath) => {
-  const contractAbi = require(abiPath);
+const SmartContract = (contractAddress, abiName) => {
+  const contractAbi = require(`${__dirname}/../abi/${abiName}.json`);
   const provider = getDefaultProvider('homestead');
   return new Contract(contractAddress, contractAbi, provider);
 };
 
-export default SmartContract;
+module.exports = SmartContract;
